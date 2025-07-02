@@ -1,0 +1,5 @@
+MachineId,Location,MachineType
+M001,US-East,WebServer
+M002,EU-West,Database
+M003,APAC,WebServer
+M004,US-West,API
