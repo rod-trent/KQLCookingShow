@@ -1,6 +1,6 @@
 # KQL Cooking Show Datasets - README
 
-This README provides instructions for using the datasets created for the *KQL Cooking Show: Recipes for Tasty Data Insights* blog post. These datasets are designed to work with the Kusto Query Language (KQL) queries presented in the blog post, enabling you to replicate the *Data Smoothie* and *Hearty Analytics Stew* recipes in Azure Data Explorer.
+This README provides instructions for using the datasets created for the [*KQL Cooking Show: Recipes for Tasty Data Insights*](https://rodtrent.substack.com/p/kql-cooking-show-recipes-for-tasty) blog post. These datasets are designed to work with the Kusto Query Language (KQL) queries presented in the blog post, enabling you to replicate the *Data Smoothie* and *Hearty Analytics Stew* recipes in Azure Data Explorer.
 
 ## Overview
 
@@ -16,7 +16,7 @@ These datasets are small for simplicity but contain enough data to demonstrate t
 ## Prerequisites
 
 - **Azure Data Explorer**: Access to an Azure Data Explorer cluster and database where you can ingest data and run KQL queries.
-- **KQL Queries**: The KQL queries from the *KQL Cooking Show* blog post, available in the blog post content.
+- **KQL Queries**: The KQL queries from the [*KQL Cooking Show* blog post](https://rodtrent.substack.com/p/kql-cooking-show-recipes-for-tasty), available in the blog post content.
 - **Tools**: Basic knowledge of Azure Data Explorer's ingestion methods (e.g., via the UI or KQL commands).
 
 ## Setup Instructions
@@ -100,7 +100,7 @@ MachinesTable | count
 Each table should return a count of 10 for `EventsTable`, 5 for `UsersTable`, 10 for `LogsTable`, and 4 for `MachinesTable`.
 
 ### 5. Run the KQL Queries
-Use the KQL queries from the *KQL Cooking Show* blog post to generate insights:
+Use the KQL queries from the [*KQL Cooking Show* blog post](https://rodtrent.substack.com/p/kql-cooking-show-recipes-for-tasty) to generate insights:
 
 - **Data Smoothie Query**:
   ```kql
@@ -128,7 +128,7 @@ Copy these queries into the Azure Data Explorer query editor and run them to see
 ## Notes
 - **Data Scale**: The datasets are intentionally small for ease of use. To scale up, generate additional rows with similar patterns and ingest them into the tables.
 - **Timestamp Handling**: Ensure your Azure Data Explorer cluster is set to UTC to match the `Timestamp` values in the datasets (e.g., `2025-06-25T10:00:00Z`).
-- **Query Optimization**: Follow the *Cooking Tips* from the blog post to optimize query performance, such as applying `where` clauses early and using appropriate join types.
+- **Query Optimization**: Follow the *Cooking Tips* from the [blog post](https://rodtrent.substack.com/p/kql-cooking-show-recipes-for-tasty) to optimize query performance, such as applying `where` clauses early and using appropriate join types.
 - **Visualization**: The *Hearty Analytics Stew* query uses `render timechart`. View the results in the Azure Data Explorer UI to see the time-series chart.
 
 ## Troubleshooting
@@ -139,6 +139,6 @@ Copy these queries into the Azure Data Explorer query editor and run them to see
 ## Additional Resources
 - [Azure Data Explorer Documentation](https://docs.microsoft.com/en-us/azure/data-explorer/)
 - [KQL Reference](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/)
-- The *KQL Cooking Show* blog post for the full context of the queries and recipes.
+- The [*KQL Cooking Show* blog post](https://rodtrent.substack.com/p/kql-cooking-show-recipes-for-tasty) for the full context of the queries and recipes.
 
 Happy cooking with KQL!
